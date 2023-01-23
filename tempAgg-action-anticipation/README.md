@@ -78,7 +78,7 @@ In order for the `evaluate.py` to not throw any error, please maintain the same 
 |  **Tail**   |     55.97    |      32.83     |      4.91      |
 | **Unseen**  |     60.85    |      24.01     |      8.48      |
 
-**Note**: The above model is trained on both train and valdiation splits (i.e. `trainval.csv`) with `--past_attention`. The result is produced after avg-pooling scores from all views.
+**Note**: The above model is trained on both train and validation splits (i.e. `trainval.csv`) with `--past_attention`. The result is produced after avg-pooling scores from all views.
 
 To get similar overall, tail and unseen split results on the test set, run the following to generate `preds.json` for the test set:
 
