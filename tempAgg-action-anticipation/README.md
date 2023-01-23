@@ -97,7 +97,7 @@ The test set labels have been withheld for challenge purposes. So please submit 
 ## Pretrained Models
 
 | Trained on   | Evaluated on             | Verb T5R (%) | Object T5R (%) | Action T5R (%) | Link                                                                                                          |
-|--------------|--------------------------|--------------|----------------|----------------|---------------------------------------------------------------------------------------------------------------|
+|:------------:|:------------------------:|:------------:|:--------------:|:--------------:|:-------------------------------------------------------------------------------------------------------------:|
 | train.csv    | validation_challenge.csv | 59.11        | 26.27          | 8.53           | [ckpt_validation.pth.tar](https://drive.google.com/file/d/1fATaxlAFIjCl6ImcSIwta2MFWZTIlIWT/view?usp=sharing) |
 | trainval.csv | test_challenge.csv       | 60.59        | 32.44          | 9.82           | [ckpt_test.pth.tar](https://drive.google.com/file/d/1snvGGjPPuD2QuFaONdpt6hrXsTlrL0Nj/view?usp=sharing)       |
 
