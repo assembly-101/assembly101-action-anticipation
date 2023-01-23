@@ -14,6 +14,7 @@ This repository has been adapted from the original [TempAgg repository](https://
 * [Evaluate](#evaluate)
   * [Validation](#validation)
   * [Test](#test)
+* [Pretrained Models](#pretrained-models)
 * [Train](#train)
 
 
@@ -34,10 +35,6 @@ The action anticipation annotations and can be found [here](https://drive.google
 ## Features
 
 TempAgg requires per-frame features as input. TSM (8-frame input) has been used for extracting 2048-D per-frame features which can be downloaded from our [Gdrive](https://drive.google.com/drive/folders/1nh8PHwEw04zxkkkKlfm4fsR3IPEDvLKj). Please follow [this](https://github.com/assembly-101/assembly101-download-scripts) for requesting drive access to download the `.lmdb` TSM features.
-
-## Pretrained Models
-
-Will be released soon.
 
 ## Evaluate
 
@@ -96,6 +93,13 @@ python main.py --mode test \
       --model_name_ev 'name of the .pth.tar checkpoint file'
 ```
 The test set labels have been withheld for challenge purposes. So please submit the `preds.json` to our [Codalab Action Anticipation challenge](TBD) to produce Top-5 Recall results on Overall/Tail/Unseen splits separately.
+
+## Pretrained Models
+
+| Trained on   | Evaluated on             | Verb T5R (%) | Object T5R (%) | Action T5R (%) | Link                                                                                                          |
+|--------------|--------------------------|--------------|----------------|----------------|---------------------------------------------------------------------------------------------------------------|
+| train.csv    | validation_challenge.csv | 59.11        | 26.27          | 8.53           | [ckpt_validation.pth.tar](https://drive.google.com/file/d/1fATaxlAFIjCl6ImcSIwta2MFWZTIlIWT/view?usp=sharing) |
+| trainval.csv | test_challenge.csv       | 60.59        | 32.44          | 9.82           | [ckpt_test.pth.tar](https://drive.google.com/file/d/1snvGGjPPuD2QuFaONdpt6hrXsTlrL0Nj/view?usp=sharing)       |
 
 ## Train
 
