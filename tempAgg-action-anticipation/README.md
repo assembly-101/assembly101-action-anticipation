@@ -73,6 +73,16 @@ python evaluate.py "path_to_GT.json" "path_to_preds.json"
 In order for the `evaluate.py` to not throw any error, please maintain the same file structure of `data/` as provided [here](https://drive.google.com/drive/folders/1i_JsDmFt_sQ1T5ohEPAkCyyUkrJnY-rL).
 
 ### Test
+
+<u>**Top-5 recall (T5R) results on the test set for different splits**</u>
+|  Split      | Verb T5R (%) | Object T5R (%) | Action T5R (%) |
+|:-----------:|:------------:|:--------------:|:--------------:|
+| **Overall** |     60.59    |      32.44     |      9.82      |
+|  **Tail**   |     55.97    |      32.83     |      4.91      |
+| **Unseen**  |     60.85    |      24.01     |      8.48      |
+
+**Note**: The above model is trained on both train and valdiation splits (i.e. `trainval.csv`) with `--past_attention`. The result is produced after avg-pooling scores from all views.
+
 To get similar overall, tail and unseen split results on the test set, run the following to generate `preds.json` for the test set:
 
 ```bash
